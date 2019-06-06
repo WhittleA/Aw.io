@@ -1,0 +1,43 @@
+<!DOCTYPE html>	
+<html>
+<head>
+<title>Andrew</title>
+ <link rel="stylesheet" href="oop.css">
+<body background="nice.png">
+  <ul class="topnav">
+       <li> <a href="index.html">Home</a></li>
+        <li> <a href="Work.html">Work</a></li>
+        <li> <a href="Certifications.html">Certifications</a></li>
+         <li> <a href="Resume.html">Resume</a></li>
+    </li>
+</ul>
+
+
+<center>
+
+<br>
+<h1>ANDREW'S SUPER AWESOME PORTFOLIO</h1>
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+</div>
+
+ <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);
+}
+ </script>
+</head>
+</html>
